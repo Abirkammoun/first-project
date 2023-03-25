@@ -33,6 +33,11 @@ pipeline {
 				bat "mvn package -DskipTests=true"
 			}
 		}
+        stage ("Lancement des Tests Unitaires"){
+		steps{
+			bat "mvn test"
+				}
+		}
         
         	
     }
