@@ -56,8 +56,8 @@ public class DepartementServiceImplTest {
 	
 	@Test
 	public void D_testDeleteDepartement() {
-		dp.deleteDepartement(2);
-		Assert.assertNull(dp.retrieveDepartement(2));
+		dp.deleteDepartement(3);
+		Assert.assertNull(dp.retrieveDepartement(3));
 	}
 	
 	// 5 tests unitaires  
