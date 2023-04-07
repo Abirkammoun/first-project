@@ -38,7 +38,11 @@ pipeline {
 			bat "mvn test"
 				}
 		}
-        
+       stage("Analyse avec Sonar ") {
+        	steps {
+           	bat "mvn sonar:sonar"
+        	 }
+       	} 
         	
     }
 }
